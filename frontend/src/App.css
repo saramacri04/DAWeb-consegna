@@ -1,0 +1,46 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: var(--color-gray-light);
+}
+
+/* Base structural grid for generic views */
+.main-content {
+  flex: 1;
+  display: grid;
+  gap: 1.5rem;
+  padding: 2rem 0;
+}
+
+/* Custom premium button override using root tokens */
+.btn-premium {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  border: none;
+  border-radius: var(--border-radius);
+  padding: 0.6rem 1.2rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  box-shadow: var(--shadow-sm);
+}
+
+.btn-premium:hover {
+  background-color: var(--color-primary-dark);
+  box-shadow: var(--shadow-md);
+  transform: translateY(-1px);
+}
+
+/* Modern Card Layout Defaults */
+.card-premium {
+  background: var(--color-white);
+  border: 1px solid var(--color-border);
+  border-radius: var(--border-radius-lg);
+  box-shadow: var(--shadow-sm);
+  transition: all 0.3s ease;
+}
+
+.card-premium:hover {
+  box-shadow: var(--shadow-md);
+  transform: translateY(-3px);
+}
